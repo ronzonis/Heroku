@@ -1,5 +1,5 @@
 <?php
-echo("Pagina creata da Ronzoni Simone atraverso Heroku");
+echo("Pagina creata da Ronzoni Simone con Heroku");
 //require('../vendor/autoload.php');
 
 $app = new Silex\Application();
