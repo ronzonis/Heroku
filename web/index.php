@@ -27,7 +27,7 @@ $resArray = array();
 $resArray = json_decode($content);
 
 foreach($resArray as $key => $val)
-   echo "$key: ".$val."<br>";
+   echo $key.": ".$val."<br>";
 
 
 
