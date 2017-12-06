@@ -33,9 +33,9 @@ echo "</thead>";
 foreach($resArray['response']['venues'] as $key => $value)
 {    
    echo "<tr>";
-        echo "<td>$value['name']</td>";
-        echo "<td>$value['location']['lat']</td>";
-        echo "<td>$value['location']['lng']</td>";
+        echo "<td>".$value['name']."</td>";
+        echo "<td>".$value['location']['lat']."</td>";
+        echo "<td>".$value['location']['lng']."</td>";
         
    echo "</tr>";
    //echo $value['name'].", latitudine: ".$value['location']['lat'].", longitudine: ".$value['location']['lng']."<br>";
