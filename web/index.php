@@ -1,6 +1,9 @@
 <?php
 //require('../vendor/autoload.php');
 
+require('contenuto.php');
+
+/*
 $url = "https://api.foursquare.com/v2/venues/search?v=20161016&near=bergamo&query=pizzeria&intent=checkin&client_id=2BQU5RNR31YWW5UXL0UQ3BGDT04ZRZOOLH5Z454K5NJOMFNX&client_secret=2YKLYMCCYNYTIW4JLD3TJYE2LDB2YHRBKXDQR45GK5PYOCCB&limit=50";
 
 
@@ -32,6 +35,8 @@ foreach($resArray['response']['venues'] as $key => $value)
     echo "Luogo $key: ".$value['name'].", latitudine: ".$value['location']['lat'].", longitudine: ".$value['location']['lng']."<br>";
     
 }
+
+*/
 
 
 $app = new Silex\Application();
