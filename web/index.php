@@ -26,8 +26,9 @@ curl_close($ch);
 $resArray = array();
 $resArray = json_decode($content,true);
 
-print_r($resArray['response']['venues']);
-
+//print_r($resArray['response']['venues']);
+foreach($resArray['response']['venues'] as $key => $value)
+    echo "$key: $value <br>";
 
 
 
