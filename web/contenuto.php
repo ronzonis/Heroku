@@ -25,10 +25,22 @@ $resArray = array();
 $resArray = json_decode($content,true);
 
 //print_r($resArray['response']['venues']);
+
+echo "<table>";
+echo "<thead>";
+echo "<tr><td>Nome</td><td>Latitudine</td><td>Longitudine</td></tr>";
+echo "</thead>";
 foreach($resArray['response']['venues'] as $key => $value)
 {    
-    echo $value['name'].", latitudine: ".$value['location']['lat'].", longitudine: ".$value['location']['lng']."<br>";
+   echo "<tr>";
+        echo "<td>$value['name']</td>";
+        echo "<td>$value['location']['lat']</td>";
+        echo "<td>$value['location']['lng']</td>";
+        
+   echo "</tr>";
+   //echo $value['name'].", latitudine: ".$value['location']['lat'].", longitudine: ".$value['location']['lng']."<br>";
     
 }
+echo "</table>";
 
 ?>
