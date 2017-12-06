@@ -26,7 +26,7 @@ curl_close($ch);
 $resArray = array();
 $resArray = json_decode($content,true);
 
-print_r($resArray);
+print_r($resArray['response']);
 
 
 
