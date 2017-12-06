@@ -26,7 +26,7 @@ curl_close($ch);
 $resArray = array();
 $resArray = json_decode($content,true);
 
-print_r($resArray['response']);
+print_r($resArray['response']['venues']);
 
 
 
