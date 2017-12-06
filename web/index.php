@@ -28,7 +28,7 @@ $resArray = json_decode($content,true);
 
 //print_r($resArray['response']['venues']);
 foreach($resArray['response']['venues'] as $key => $value)
-    echo "$key: $value <br>";
+    echo "$key: ".$value['name']."<br>";
 
 
 
