@@ -34,7 +34,7 @@ echo '<head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?famil
 
 echo "<table class='mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp'>";
 echo "<thead>";
-echo "<tr><td class='mdl-data-table__cell--non-numeric'>Nome</td><td>Latitudine</td><td>Longitudine</td></tr>";
+echo "<tr><th class='mdl-data-table__cell--non-numeric'>Nome</th><th>Latitudine</th><th>Longitudine</th></tr>";
 echo "</thead>";
 foreach($resArray['response']['venues'] as $key => $value)
 {    
