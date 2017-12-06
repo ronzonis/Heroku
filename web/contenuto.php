@@ -48,6 +48,7 @@ echo '<head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?famil
               <div class="mdl-layout-spacer"></div>
               <!-- Navigation. We hide it in small screens. -->
               <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <!--      
                 <div class="mdl-navigation__link" onclick="passa_a(1);" style="cursor:pointer" id="home_btn"><i class="material-icons">home</i></div>
                         <div class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="home_btn">
                                         Home
@@ -56,6 +57,7 @@ echo '<head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?famil
                         <div class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="logout_btn">
                                         Logout
                                 </div>
+                        
                 <!--<a class="mdl-navigation__link" href="">Link</a>
                 <a class="mdl-navigation__link" href="">Link</a>
                 <a class="mdl-navigation__link" href="">Link</a>-->
@@ -63,7 +65,7 @@ echo '<head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?famil
             </div>
         </header>
         <main class="mdl-layout__content">
-        <div class="page-content" style='text-align:center;'>
+        <div class="page-content" >
 
 
 
