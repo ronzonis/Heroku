@@ -1,5 +1,5 @@
 <?php
-echo("Mostra pizzerie in Bergamo");
+phpinfo(); 
 //require('../vendor/autoload.php');
 
 
