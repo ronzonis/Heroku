@@ -103,18 +103,18 @@ echo '<head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?famil
                   <!--<input type='hidden' name='stato' id='stato'>-->
 
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="utente" name="utente" >
+                    <input class="mdl-textfield__input" type="text" id="tipo" name="tipo" value='Pizzeria'>
                     <label class="mdl-textfield__label" for="utente">Cosa stai cercando?</label>
                     <span class="mdl-textfield__error">Massimo 10 caratteri!</span>
                   </div>
 
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="password" name="password" id="password">
+                    <input class="mdl-textfield__input" type="text" name="citta" id="citta" value='Bergamo'>
                     <label class="mdl-textfield__label" for="password">Citt&agrave</label>
                   </div>
 
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="password" name="password" id="password">
+                    <input class="mdl-textfield__input" type="number" name="numero" id="numero" value='50'>
                     <label class="mdl-textfield__label" for="password">Numero di risultati</label>
                     <span class="mdl-textfield__error">Massimo 50!</span>
                   </div>
