@@ -84,7 +84,7 @@ echo '<head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?famil
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
 }
-         
+</style>         
     
 <?
 
