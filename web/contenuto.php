@@ -85,54 +85,7 @@ echo '<head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?famil
   color: #fff;
 }
          
-         
-         
-<div class="mdl-cell mdl-cell--12-col">
-                        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                                  <div class="mdl-card__title">
-                                    <h2 class="mdl-card__title-text">Utente</h2>
-                                  </div>
-                                  <div class="mdl-card__supporting-text">
-
-
-
-                                        <form name='forma' id='forma' method='post'>
-                                          <input type='hidden' name='stato' id='stato'>
-
-                                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="text" id="utente" name="utente" >
-                                            <label class="mdl-textfield__label" for="utente">Nome utente</label>
-                                            <span class="mdl-textfield__error">Massimo 10 caratteri!</span>
-                                          </div>
-
-                                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                            <input class="mdl-textfield__input" type="password" name="password" id="password">
-                                            <label class="mdl-textfield__label" for="password">Password</label>
-                                          </div>
-
-                                          <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-2">
-                                                  <input type="checkbox" id="switch-2" class="mdl-switch__input" onchange="imposta_tipo();">
-                                                  <span class="mdl-switch__label">Amministratore</span>
-                                                </label>
-                                                <input type="hidden" name="tipo" id="tipo" value="U"/>
-                                        </form>
-
-
-                                  </div>
-                          <div class="mdl-card__actions mdl-card--border">
-                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="controlla();">
-                              Aggiungi
-                            </a>
-                          </div>
-<div class="mdl-card__menu">
-<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-<i class="material-icons">share</i>
-</button>
-</div>
-
-</div>
-</div>
-</div>
+    
 <?
 
 
