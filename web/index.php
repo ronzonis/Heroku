@@ -1,7 +1,15 @@
-<?php
-phpinfo(); 
+<?php; 
 //require('../vendor/autoload.php');
 
+curl -X GET -G \
+  'https://api.foursquare.com/v2/venues/search' \
+    -d client_id="2BQU5RNR31YWW5UXL0UQ3BGDT04ZRZOOLH5Z454K5NJOMFNX" \
+    -d client_secret="2YKLYMCCYNYTIW4JLD3TJYE2LDB2YHRBKXDQR45GK5PYOCCB" \
+    -d v="20170801" \
+    -d query="pizzeria" \
+    -d near="bergamo" \
+    -d limit=40 \
+    -d intent="checkin" 
 
 
 
