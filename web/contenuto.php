@@ -26,7 +26,13 @@ $resArray = json_decode($content,true);
 
 //print_r($resArray['response']['venues']);
 
-echo "<table>";
+
+echo '<head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script></head>';
+
+
+echo "<table class='mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp'>";
 echo "<thead>";
 echo "<tr><td>Nome</td><td>Latitudine</td><td>Longitudine</td></tr>";
 echo "</thead>";
