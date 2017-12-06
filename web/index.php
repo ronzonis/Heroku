@@ -29,7 +29,7 @@ $resArray = json_decode($content,true);
 //print_r($resArray['response']['venues']);
 foreach($resArray['response']['venues'] as $key => $value)
 {    
-    echo "Luogo $key: ".$value['name'].", situato in ".$value['location']['address']."<br>";
+    echo "Luogo $key: ".$value['name'].", latitudine: ".$value['location']['lat'].", longitudine: ".$value['location']['lng']."<br>";
     
 }
 
