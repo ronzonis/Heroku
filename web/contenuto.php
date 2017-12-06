@@ -32,6 +32,12 @@ echo '<head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?famil
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script></head>';
 
 ?>
+<style>
+    html, body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}        
+</style>
+
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
           <header class="mdl-layout__header">
