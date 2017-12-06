@@ -28,7 +28,7 @@ $resArray = json_decode($content);
 
 //echo $content."<br><br><br>";
 
-echo "<pre>".print_r($resArray); echo "</pre>";
+echo $resArray;
 
 
 
