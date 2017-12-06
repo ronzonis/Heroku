@@ -1,15 +1,9 @@
 <?php; 
 //require('../vendor/autoload.php');
 
-curl -X GET -G \
-  'https://api.foursquare.com/v2/venues/search' \
-    -d client_id="2BQU5RNR31YWW5UXL0UQ3BGDT04ZRZOOLH5Z454K5NJOMFNX" \
-    -d client_secret="2YKLYMCCYNYTIW4JLD3TJYE2LDB2YHRBKXDQR45GK5PYOCCB" \
-    -d v="20170801" \
-    -d query="pizzeria" \
-    -d near="bergamo" \
-    -d limit=40 \
-    -d intent="checkin" 
+$risposta = get_web_page("https://api.foursquare.com/v2/venues/search?v=20161016&near=bergamo&query=pizzeria&intent=checkin&client_id=2BQU5RNR31YWW5UXL0UQ3BGDT04ZRZOOLH5Z454K5NJOMFNX&client_secret=2YKLYMCCYNYTIW4JLD3TJYE2LDB2YHRBKXDQR45GK5PYOCCB");
+
+echo $risposta;
 
 
 
