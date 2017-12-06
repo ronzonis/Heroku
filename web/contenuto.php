@@ -86,21 +86,36 @@ echo '<head><meta name="viewport" content="width=device-width, initial-scale=1.0
 }
 </style>         
                 
-                
-                
-                     
+<script>                
+function controlla()
+{
+	var tipo = document.getElementById('titolo').value;
+	var citta = document.getElementById('citta').value;
+	var numero = parseInt(document.getElementById('numero').value);
+	
+	if(tipo != "" && citta != "" && numero != "")
+	{
+		if(numero>0 && numero <= 50)
+		{
+			document.getElementById('forma').submit();
+		}else alert("Immettere un valore compreso tra 1 e 50");
+	}else alert("Compilare tutti i campi");
+	
+	
+}
+</script>                     
          
 <div class="mdl-cell mdl-cell--12-col">
 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
           <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Utente</h2>
+            <h2 class="mdl-card__title-text">Cosa stai cercando?</h2>
           </div>
           <div class="mdl-card__supporting-text">
 
 
 
                 <form name='forma' id='forma' method='post'>
-                  <!--<input type='hidden' name='stato' id='stato'>-->
+                  <input type='hidden' name='stato' id='stato' value='1'>
 
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                     <input class="mdl-textfield__input" type="text" id="tipo" name="tipo" value='Pizzeria'>
@@ -123,16 +138,16 @@ echo '<head><meta name="viewport" content="width=device-width, initial-scale=1.0
 
 
           </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="controlla();">
-      Aggiorna
-    </a>
-  </div>
-<div class="mdl-card__menu">
-<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-<i class="material-icons">share</i>
-</button>
-</div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="controlla();">
+              Aggiorna
+            </a>
+          </div>
+        <div class="mdl-card__menu">
+			<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+				<i class="material-icons">share</i>
+			</button>
+        </div>
 
 </div>
 </div>
