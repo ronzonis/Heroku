@@ -1,4 +1,4 @@
-<?php; 
+<?php
 //require('../vendor/autoload.php');
 
 $url = "https://api.foursquare.com/v2/venues/search?v=20161016&near=bergamo&query=pizzeria&intent=checkin&client_id=2BQU5RNR31YWW5UXL0UQ3BGDT04ZRZOOLH5Z454K5NJOMFNX&client_secret=2YKLYMCCYNYTIW4JLD3TJYE2LDB2YHRBKXDQR45GK5PYOCCB";
@@ -24,9 +24,9 @@ $content  = curl_exec($ch);
 curl_close($ch);
 
 $resArray = array();
-$resArray = json_decode($content);
+$resArray = json_decode($content,true);
 
-echo $content;
+print_r($resArray);
 
 
 
