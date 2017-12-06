@@ -26,17 +26,9 @@ curl_close($ch);
 $resArray = array();
 $resArray = json_decode($content);
 
-$jsonIterator = new RecursiveIteratorIterator(
-    new RecursiveArrayIterator(json_decode($json, TRUE)),
-    RecursiveIteratorIterator::SELF_FIRST);
+foreach($resArray as $key => $val)
+   echo "$key: ".$val."<br>";
 
-foreach ($jsonIterator as $key => $val) {
-    if(is_array($val)) {
-        echo "$key:\n";
-    } else {
-        echo "$key => $val\n";
-    }
-}
 
 
 
