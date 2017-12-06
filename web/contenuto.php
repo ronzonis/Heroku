@@ -63,7 +63,7 @@ echo '<head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?famil
             </div>
         </header>
         <main class="mdl-layout__content">
-        <div class="page-content" >
+        <div class="page-content" style='text-align:center;'>
 
 
 
@@ -71,7 +71,7 @@ echo '<head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?famil
 
 
 
-echo "<table class='mdl-data-table mdl-js-data-table mdl-shadow--2dp' style='text-align:center;'>";
+echo "<table class='mdl-data-table mdl-js-data-table mdl-shadow--2dp'>";
 echo "<thead>";
 echo "<tr><th class='mdl-data-table__cell--non-numeric'>Nome</th><th>Latitudine</th><th>Longitudine</th></tr>";
 echo "</thead>";
