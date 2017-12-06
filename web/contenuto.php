@@ -73,7 +73,7 @@ echo '<head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?famil
  <style>
 
 .demo-card-wide.mdl-card {
-  width: 512px;
+  width: 550px;
   margin:auto;
 }
 .demo-card-wide > .mdl-card__title {
@@ -118,14 +118,14 @@ echo '<head><link rel="stylesheet" href="https://fonts.googleapis.com/icon?famil
                     <label class="mdl-textfield__label" for="password">Numero di risultati</label>
                     <span class="mdl-textfield__error">Massimo 50!</span>
                   </div>
-                        <input type="hidden" name="tipo" id="tipo" value="U"/>
+                        
                 </form>
 
 
           </div>
   <div class="mdl-card__actions mdl-card--border">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="controlla();">
-      Aggiungi
+      Aggiorna
     </a>
   </div>
 <div class="mdl-card__menu">
