@@ -1,5 +1,5 @@
 <?php
-echo("Pagina creata da Ronzoni Simone con Heroku");
+echo("Mostra pizzerie in Bergamo");
 //require('../vendor/autoload.php');
 
 $app = new Silex\Application();
