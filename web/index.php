@@ -27,7 +27,7 @@ $resArray = array();
 $resArray = json_decode($content);
 
 
-foreach (resArray as $k => $v) {
+foreach ($resArray as $k => $v) {
    echo $k, ' : ', $v;
 }
 
