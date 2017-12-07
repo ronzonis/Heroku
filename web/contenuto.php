@@ -12,7 +12,7 @@ if($stato == 0)
 	$numero = 50;
 }else
 {
-	$url = "https://api.foursquare.com/v2/venues/search?v=20161016&near=".$_POST['citta']."&query=".$_POST['tipo']."&intent=checkin&client_id=2BQU5RNR31YWW5UXL0UQ3BGDT04ZRZOOLH5Z454K5NJOMFNX&client_secret=2YKLYMCCYNYTIW4JLD3TJYE2LDB2YHRBKXDQR45GK5PYOCCB&limit=".$_POST['numero'];
+	$url = "https://api.foursquare.com/v2/venues/search?v=20161016&near=".urlencode($_POST['citta'])."&query=".urlencode($_POST['tipo'])."&intent=checkin&client_id=2BQU5RNR31YWW5UXL0UQ3BGDT04ZRZOOLH5Z454K5NJOMFNX&client_secret=2YKLYMCCYNYTIW4JLD3TJYE2LDB2YHRBKXDQR45GK5PYOCCB&limit=".urlencode($_POST['numero']);
 	$tipo = $_POST['tipo'];
 	$citta = $_POST['citta'];
 	$numero = $_POST['numero'];
