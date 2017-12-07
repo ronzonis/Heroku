@@ -54,7 +54,7 @@ echo '<head><meta name="viewport" content="width=device-width, initial-scale=1.0
 }        
 </style>
 
-<body>
+<body onload='dimensiona();'>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
           <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
@@ -103,6 +103,11 @@ echo '<head><meta name="viewport" content="width=device-width, initial-scale=1.0
 </style>         
                 
 <script>                
+function dimensiona()
+{
+	document.getElementById("demo-card-wide").style.width = parseInt(document.getElementById('tabella').style.width)+"px;";
+}
+	
 function controlla()
 {
 	var tipo = document.getElementById('titolo').value;
@@ -173,7 +178,7 @@ function controlla()
 
 
 
-echo "<table class='mdl-data-table mdl-js-data-table mdl-shadow--2dp' style='margin:auto;'>";
+echo "<table id='tabella' class='mdl-data-table mdl-js-data-table mdl-shadow--2dp' style='margin:auto;'>";
 echo "<thead>";
 echo "<tr><th class='mdl-data-table__cell--non-numeric'>Nome</th><th>Latitudine</th><th>Longitudine</th></tr>";
 echo "</thead>";
