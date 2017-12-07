@@ -54,7 +54,22 @@ echo '<head><meta name="viewport" content="width=device-width, initial-scale=1.0
 }        
 </style>
 
-<body>
+
+<script>
+function individua_tasto(e)
+{
+    e = e || window.event;
+    if (e.keyCode == 13)
+    {
+        document.getElementById('aggiorna_btn').click();
+        return false;
+    }
+    return true;
+}
+
+</script>
+
+<body onkeypress='individua_tasto(event);'>
 
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
           <header class="mdl-layout__header">
@@ -159,7 +174,7 @@ function controlla()
 
           </div>
           <div class="mdl-card__actions mdl-card--border">
-            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="controlla();">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onclick="controlla();" id="aggiorna_btn">
               Aggiorna
             </a>
           </div>
