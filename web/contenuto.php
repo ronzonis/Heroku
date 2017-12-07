@@ -5,10 +5,18 @@ if(isset($_POST['stato']) && !empty($_POST['stato']))
 }else $stato = 0;
 
 if($stato == 0)
+{
 	$url = "https://api.foursquare.com/v2/venues/search?v=20161016&near=bergamo&query=pizzeria&intent=checkin&client_id=2BQU5RNR31YWW5UXL0UQ3BGDT04ZRZOOLH5Z454K5NJOMFNX&client_secret=2YKLYMCCYNYTIW4JLD3TJYE2LDB2YHRBKXDQR45GK5PYOCCB&limit=50";
-else
+	$tipo = "Pizzeria";
+	$citta = "Bergamo";
+	$numero = 50;
+}else
+{
 	$url = "https://api.foursquare.com/v2/venues/search?v=20161016&near=".$_POST['citta']."&query=".$_POST['tipo']."&intent=checkin&client_id=2BQU5RNR31YWW5UXL0UQ3BGDT04ZRZOOLH5Z454K5NJOMFNX&client_secret=2YKLYMCCYNYTIW4JLD3TJYE2LDB2YHRBKXDQR45GK5PYOCCB&limit=".$_POST['numero'];
-
+	$tipo = $_POST['tipo'];
+	$citta = $_POST['citta'];
+	$numero = $_POST['numero'];
+}
 
 $options = array(
         CURLOPT_RETURNTRANSFER => true,   // return web page
@@ -81,7 +89,7 @@ echo '<head><meta name="viewport" content="width=device-width, initial-scale=1.0
  <style>
 
 .demo-card-wide.mdl-card {
-  width: 530px;
+  width: 550px;
   margin:auto;
 }
 .demo-card-wide > .mdl-card__title {
@@ -126,18 +134,18 @@ function controlla()
                   <input type='hidden' name='stato' id='stato' value='1'>
 
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" id="tipo" name="tipo" value='Pizzeria'>
+                    <? echo '<input class="mdl-textfield__input" type="text" id="tipo" name="tipo" value="'.$tipo.'">'; ?>
                     <label class="mdl-textfield__label" for="utente">Cosa stai cercando?</label>
                     <span class="mdl-textfield__error">Massimo 10 caratteri!</span>
                   </div>
 
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="text" name="citta" id="citta" value='Bergamo'>
+                    <? echo '<input class="mdl-textfield__input" type="text" name="citta" id="citta" value="'.$citta.'">'; ?>
                     <label class="mdl-textfield__label" for="password">Citt&agrave</label>
                   </div>
 
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                    <input class="mdl-textfield__input" type="number" name="numero" id="numero" value='50'>
+                    <? echo '<input class="mdl-textfield__input" type="number" name="numero" id="numero" value="'.$numero.'">'; ?>
                     <label class="mdl-textfield__label" for="password">Numero di risultati</label>
                     <span class="mdl-textfield__error">Massimo 50!</span>
                   </div>
