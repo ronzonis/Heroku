@@ -179,9 +179,9 @@ function controlla()
 
 
 
-echo "<table  class='mdl-data-table mdl-js-data-table mdl-shadow--2dp' style='margin:auto;'>";
+echo "<table id='tabella' class='mdl-data-table mdl-js-data-table mdl-shadow--2dp' style='margin:auto;'>";
 echo "<thead>";
-echo "<tr id='tabella'><th class='mdl-data-table__cell--non-numeric'>Nome</th><th>Latitudine</th><th>Longitudine</th></tr>";
+echo "<tr><th class='mdl-data-table__cell--non-numeric'>Nome</th><th>Latitudine</th><th>Longitudine</th></tr>";
 echo "</thead>";
 foreach($resArray['response']['venues'] as $key => $value)
 {    
