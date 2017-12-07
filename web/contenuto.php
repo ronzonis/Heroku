@@ -55,6 +55,7 @@ echo '<head><meta name="viewport" content="width=device-width, initial-scale=1.0
 </style>
 
 <body>
+
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
           <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
@@ -121,8 +122,9 @@ function controlla()
 	
 	
 }
-</script>                     
-         
+</script>             
+		
+<div class="mdl-grid">         
 <div class="mdl-cell mdl-cell--6-col">
 <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="card">
           <div class="mdl-card__title">
@@ -191,5 +193,5 @@ foreach($resArray['response']['venues'] as $key => $value)
     
 }
 echo "</table>";
-echo "</div></div></body>";
+echo "</div></div></div></body>";
 ?>
