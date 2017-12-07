@@ -110,7 +110,7 @@ function individua_tasto(e)
   margin-top:20px;
 }
 .demo-card-wide > .mdl-card__title {
-  color: #9e9e9e;
+  color: #757575;
   height: 60px;
   background-color: white/* url('../assets/demos/welcome_card.jpg') center / cover*/;
 }
