@@ -174,7 +174,7 @@ function controlla()
 
 
 
-echo "<table id='tabella' class='mdl-data-table mdl-js-data-table mdl-shadow--2dp' style='margin:auto;'>";
+echo "<table id='tabella' class='mdl-data-table mdl-js-data-table mdl-shadow--2dp' style='margin:auto; margin-bottom:50px;'>";
 echo "<thead>";
 echo "<tr><th class='mdl-data-table__cell--non-numeric'>Nome</th><th>Latitudine</th><th>Longitudine</th></tr>";
 echo "</thead>";
