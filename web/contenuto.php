@@ -89,8 +89,9 @@ echo '<head><meta name="viewport" content="width=device-width, initial-scale=1.0
  <style>
 
 .demo-card-wide.mdl-card {
-  
   margin:auto;
+  margin-bottom:20px;
+  margin-top:20px;
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
