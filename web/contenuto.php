@@ -111,8 +111,8 @@ function individua_tasto(e)
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
-  height: 76px;
-  background-color: grey/* url('../assets/demos/welcome_card.jpg') center / cover*/;
+  height: 60px;
+  background-color: white/* url('../assets/demos/welcome_card.jpg') center / cover*/;
 }
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
