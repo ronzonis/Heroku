@@ -171,7 +171,7 @@ function controlla()
 
 </div>
 </div>
-</div>
+
     
 <?
 
