@@ -106,6 +106,7 @@ echo '<head><meta name="viewport" content="width=device-width, initial-scale=1.0
 function dimensiona()
 {
 	document.getElementById("card").style.width = parseInt(document.getElementById('tabella').style.width)+"px;";
+	console.log(document.getElementById('tabella').style.width);
 }
 	
 function controlla()
