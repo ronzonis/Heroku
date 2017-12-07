@@ -105,7 +105,7 @@ echo '<head><meta name="viewport" content="width=device-width, initial-scale=1.0
 <script>                
 function dimensiona()
 {
-	document.getElementById("demo-card-wide").style.width = parseInt(document.getElementById('tabella').style.width)+"px;";
+	document.getElementById("card").style.width = parseInt(document.getElementById('tabella').style.width)+"px;";
 }
 	
 function controlla()
@@ -127,7 +127,7 @@ function controlla()
 </script>                     
          
 <div class="mdl-cell mdl-cell--12-col">
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+<div class="demo-card-wide mdl-card mdl-shadow--2dp" id="card">
           <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">Cosa stai cercando?</h2>
           </div>
