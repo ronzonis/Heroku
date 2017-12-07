@@ -89,7 +89,7 @@ echo '<head><meta name="viewport" content="width=device-width, initial-scale=1.0
  <style>
 
 .demo-card-wide.mdl-card {
-  width: 550px;
+  
   margin:auto;
 }
 .demo-card-wide > .mdl-card__title {
