@@ -177,14 +177,14 @@ function controlla()
 
 echo "<table id='tabella' class='mdl-data-table mdl-js-data-table mdl-shadow--2dp' style='margin:auto; margin-bottom:50px;'>";
 echo "<thead>";
-echo "<tr><th class='mdl-data-table__cell--non-numeric'>Nome</th><th>Latitudine</th><th>Longitudine</th></tr>";
+echo "<tr><th class='mdl-data-table__cell--non-numeric'>Nome</th><th class='mdl-data-table__cell--non-numeric'>Latitudine</th><th class='mdl-data-table__cell--non-numeric'>Longitudine</th></tr>";
 echo "</thead>";
 foreach($resArray['response']['venues'] as $key => $value)
 {    
    echo "<tr>";
         echo "<td class='mdl-data-table__cell--non-numeric'>".$value['name']."</td>";
-        echo "<td>".$value['location']['lat']."</td>";
-        echo "<td>".$value['location']['lng']."</td>";
+        echo "<td class='mdl-data-table__cell--non-numeric'>".$value['location']['lat']."</td>";
+        echo "<td class='mdl-data-table__cell--non-numeric'>".$value['location']['lng']."</td>";
         
    echo "</tr>";
    //echo $value['name'].", latitudine: ".$value['location']['lat'].", longitudine: ".$value['location']['lng']."<br>";
