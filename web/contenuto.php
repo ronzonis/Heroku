@@ -187,7 +187,7 @@ function controlla()
 </div>
 </div>
 <style>
-	@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
 
   table, thead, tbody, th, td, tr {
       display: block;
@@ -231,7 +231,7 @@ function controlla()
     padding-right: 18px;
   }
   
-	}</style>
+}</style>
     
 <?
 
@@ -244,9 +244,9 @@ echo "</thead>";
 foreach($resArray['response']['venues'] as $key => $value)
 {    
    echo "<tr>";
-        echo "<td class='mdl-data-table__cell--non-numeric'>".$value['name']."</td>";
-        echo "<td class='mdl-data-table__cell--non-numeric'>".$value['location']['lat']."</td>";
-        echo "<td class='mdl-data-table__cell--non-numeric'>".$value['location']['lng']."</td>";
+        echo "<td data-label='Nome' class='mdl-data-table__cell--non-numeric'>".$value['name']."</td>";
+        echo "<td data-label='Latitudine' class='mdl-data-table__cell--non-numeric'>".$value['location']['lat']."</td>";
+        echo "<td data-label='Longitudine' class='mdl-data-table__cell--non-numeric'>".$value['location']['lng']."</td>";
         
    echo "</tr>";
    //echo $value['name'].", latitudine: ".$value['location']['lat'].", longitudine: ".$value['location']['lng']."<br>";
