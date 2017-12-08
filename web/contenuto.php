@@ -33,7 +33,7 @@ $options = array(
 $ch = curl_init($url);
 curl_setopt_array($ch, $options);
 
-$content  = curl_exec($ch);
+$content  = curl_exec($ch) or die(curl_error());
 
 curl_close($ch);
 
