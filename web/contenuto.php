@@ -239,7 +239,7 @@ function controlla()
 echo '<div class="mdl-cell mdl-cell--6-col">';
 echo "<table id='tabella' class='mdl-data-table mdl-js-data-table mdl-shadow--2dp' style='margin:auto; margin-bottom:20px; margin-top:20px;'>";
 echo "<thead>";
-echo "<tr><th class='mdl-data-table__cell--non-numeric'>Nome</th><th'>Latitudine</th><th>Longitudine</th></tr>";
+echo "<tr><th class='mdl-data-table__cell--non-numeric'>Nome</th><th>Latitudine</th><th>Longitudine</th></tr>";
 echo "</thead>";
 echo "<tbody>";
 foreach($resArray['response']['venues'] as $key => $value)
