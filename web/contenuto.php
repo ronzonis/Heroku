@@ -239,15 +239,15 @@ function controlla()
 echo '<div class="mdl-cell mdl-cell--6-col">';
 echo "<table id='tabella' class='mdl-data-table mdl-js-data-table mdl-shadow--2dp' style='margin:auto; margin-bottom:20px; margin-top:20px;'>";
 echo "<thead>";
-echo "<tr><th class='mdl-data-table__cell--non-numeric'>Nome</th><th>Latitudine</th><th>Longitudine</th></tr>";
+echo "<tr><th class='mdl-data-table__cell--non-numeric'>Nome</th><th class='mdl-data-table__cell--non-numeric'>Latitudine</th><th class='mdl-data-table__cell--non-numeric'>Longitudine</th></tr>";
 echo "</thead>";
 echo "<tbody>";
 foreach($resArray['response']['venues'] as $key => $value)
 {    
    echo "<tr>";
         echo "<td data-label='Nome'  class='mdl-data-table__cell--non-numeric'>".$value['name']."</td>";
-        echo "<td data-label='Latitudine'>".$value['location']['lat']."</td>";
-        echo "<td data-label='Longitudine'>".$value['location']['lng']."</td>";
+        echo "<td data-label='Latitudine' class='mdl-data-table__cell--non-numeric'>".$value['location']['lat']."</td>";
+        echo "<td data-label='Longitudine' class='mdl-data-table__cell--non-numeric'>".$value['location']['lng']."</td>";
         
    echo "</tr>";
    //echo $value['name'].", latitudine: ".$value['location']['lat'].", longitudine: ".$value['location']['lng']."<br>";
