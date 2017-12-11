@@ -67,22 +67,7 @@ function individua_tasto(e)
               <span class="mdl-layout-title" id='titolo'>Ricerca luoghi</span>
               <!-- Add spacer, to align navigation to the right -->
               <div class="mdl-layout-spacer"></div>
-              <!-- Navigation. We hide it in small screens. -->
-              <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <!--      
-                <div class="mdl-navigation__link" onclick="passa_a(1);" style="cursor:pointer" id="home_btn"><i class="material-icons">home</i></div>
-                        <div class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="home_btn">
-                                        Home
-                                </div>
-                <div class="mdl-navigation__link" onclick="passa_a(-2);"  style="cursor:pointer"><i class="material-icons" id="logout_btn">exit_to_app</i></div>
-                        <div class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="logout_btn">
-                                        Logout
-                                </div>
-                        
-                <!--<a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>-->
-              </nav>
+              
             </div>
         </header>
         <main class="mdl-layout__content">
