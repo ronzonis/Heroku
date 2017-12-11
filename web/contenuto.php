@@ -259,7 +259,7 @@ if($resArray['meta']['code'] == 200)
 	echo "</tbody>";
 	echo "</table>";
 }else{
-	echo '<div class="mdl-card mdl-shadow--2dp" style="margin:auto; margin-bottom:20px;">';
+	echo '<div class="mdl-card mdl-shadow--2dp" style="margin:auto; margin-top:20px;">';
 		echo '<div class="mdl-card__title mdl-card--expand">';
     			echo '<h2 class="mdl-card__title-text">Attenzione!</h2></div>';
 		echo '<div class="mdl-card__supporting-text">Si &egrave verificato un errore...</div>';
